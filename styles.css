@@ -1,0 +1,45 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    background: #dcdcdc;
+    overflow: hidden; /* Обрезаем контент, который выходит за пределы */
+}
+
+/* Контейнер для машины */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Стили для машины */
+.car {
+    position: absolute;
+    bottom: 50px;
+    left: -600px; /* Начальная позиция машины за левым краем экрана */
+    width: 600px;
+    height: auto;
+    animation: drive 4s ease-in-out forwards; /* Анимация движения машины */
+}
+
+/* Анимация движения машины */
+@keyframes drive {
+    0% {
+        transform: translateX(-600px); /* Начало анимации */
+    }
+    50% {
+        transform: translateX(20vw); /* В середине анимации машина ускоряется */
+    }
+    100% {
+        transform: translateX(calc(100vw - 650px)); /* Остановка перед правым краем */
+    }
+}
+
+
+  
+  
+  

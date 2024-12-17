@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Машина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <svg
+            class="car"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 600 300"
+        >
+            <!-- Кузов -->
+            <path
+                d="M50 200 Q100 120 300 120 Q500 120 550 200 L550 220 L50 220 Z"
+                fill="#32CD32" <!-- Зеленый цвет кузова -->
+            ></path>
+
+            <!-- Окна -->
+            <path
+                d="M110 140 Q150 110 220 110 Q290 110 320 140 L320 180 Q290 150 220 150 Q150 150 110 180 Z"
+                fill="#ffffff"
+                stroke="#000000"
+                stroke-width="2"
+            ></path>
+            <path
+                d="M280 140 Q320 110 390 110 Q460 110 490 140 L490 180 Q460 150 390 150 Q320 150 280 180 Z"
+                fill="#ffffff"
+                stroke="#000000"
+                stroke-width="2"
+            ></path>
+
+            <!-- Колёса -->
+            <circle cx="150" cy="220" r="30" fill="#000000"></circle>
+            <circle cx="450" cy="220" r="30" fill="#000000"></circle>
+        </svg>
+    </div>
+</body>
+</html>
+
+
